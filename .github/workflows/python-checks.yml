@@ -40,7 +40,7 @@ jobs:
       - name: Install Ruff
         run: pip install ruff
       - name: Run Ruff linting
-        run: ruff .
+        run: ruff check .
 
   typecheck:
     needs: format
